@@ -13,6 +13,7 @@ export const userLoggedOut = () => ({
 export const login = (credentials) => dispatch =>
     api.user.login(credentials).then(user => {
         localStorage.AiotexHUBMonitorJWT = user.token;
+        localStorage.AiotexUserEmail = user.email;
         dispatch(userLoggedIn(user))
     });
 
