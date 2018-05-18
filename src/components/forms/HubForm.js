@@ -55,7 +55,7 @@ class HubForm extends React.Component {
         return (
             <Segment>
                 <Form onSubmit={this.onSubmit} loading={loading}>
-                    <Grid columns={2} fluid stackable>
+                    <Grid columns={1} fluid="true" stackable>
                         <Grid.Row>
                             <Grid.Column>
                                 <Form.Field error={!!errors.key}>
@@ -74,7 +74,7 @@ class HubForm extends React.Component {
                         </Grid.Row>
 
                         <Grid.Row>
-                            <Button primary>Save</Button>
+                            <Button primary>Authorize</Button>
                         </Grid.Row>
                     </Grid>
                 </Form>
@@ -86,7 +86,7 @@ class HubForm extends React.Component {
 HubForm.propTypes = {
     submit: PropTypes.func.isRequired,
     hub: PropTypes.shape({
-        id: PropTypes.string.isRequired,
+        id: PropTypes.number.isRequired,
         key: PropTypes.string.isRequired
     }).isRequired
 };

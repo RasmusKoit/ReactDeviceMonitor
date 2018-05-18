@@ -4,8 +4,6 @@
     <list default="true" id="389fd893-c97a-4d30-96c7-5a5f816fdbd8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/forms/HubForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/HubForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/SearchHubForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/SearchHubForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/AddHub.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/AddHub.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,8 +52,8 @@
           <file leaf-file-name="SearchHubForm.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/forms/SearchHubForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="825">
-                  <caret line="55" column="56" lean-forward="true" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -66,8 +64,8 @@
           <file leaf-file-name="HubForm.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/forms/HubForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+                <state relative-caret-position="723">
+                  <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -133,8 +131,8 @@
           <file leaf-file-name="HubForm.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/forms/HubForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+                <state relative-caret-position="1293">
+                  <caret line="88" column="40" lean-forward="true" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -164,6 +162,7 @@
       <find>hub</find>
       <find>hubsHash</find>
       <find>data</find>
+      <find>hub.id</find>
       <find>props</find>
     </findStrings>
     <replaceStrings>
@@ -196,9 +195,9 @@
         <option value="$PROJECT_DIR$/src/components/pages/Dashboard.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/forms/HubForm.js" />
         <option value="$PROJECT_DIR$/src/components/pages/AddHub.js" />
         <option value="$PROJECT_DIR$/src/components/forms/SearchHubForm.js" />
+        <option value="$PROJECT_DIR$/src/components/forms/HubForm.js" />
       </list>
     </option>
   </component>
@@ -367,7 +366,7 @@
       <workItem from="1525957496728" duration="467000" />
       <workItem from="1526284004405" duration="15252000" />
       <workItem from="1526386788006" duration="137000" />
-      <workItem from="1526639293739" duration="6522000" />
+      <workItem from="1526639293739" duration="7641000" />
     </task>
     <task id="LOCAL-00001" summary="Start of device Monitor react webpage">
       <created>1525614287898</created>
@@ -425,15 +424,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526304661279</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed both TODO problems, cause was me searching with string instead of int from a list">
+      <created>1526647911704</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1526647911704</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68065000" />
+    <option name="totallyTimeSpent" value="69184000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11228255" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -493,7 +498,8 @@
     <MESSAGE value="Added log in and log out" />
     <MESSAGE value="Changed:&#10;    * Auth file previously didn't hold user.email state in localStorge&#10;    * Add Dashboard &#10;    * routes for privileged and unprivileged paths&#10;    * JWT" />
     <MESSAGE value="Changed:&#10;    * Added a search for unAuth Hubs, might have to change it to show last 5 hubs by default.&#10;&#10;&#10;TODO:&#10;    * Fix the problem thats not sending data properly to HubForm. This causes the application to crash.&#10;    * Find the cause of this.state.hub not having any data in AddHub.js file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed:&#10;    * Added a search for unAuth Hubs, might have to change it to show last 5 hubs by default.&#10;&#10;&#10;TODO:&#10;    * Fix the problem thats not sending data properly to HubForm. This causes the application to crash.&#10;    * Find the cause of this.state.hub not having any data in AddHub.js file." />
+    <MESSAGE value="Fixed both TODO problems, cause was me searching with string instead of int from a list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed both TODO problems, cause was me searching with string instead of int from a list" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/forms/SearchHubForm.js">
@@ -527,6 +533,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -613,6 +622,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -769,6 +781,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -851,6 +866,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/forms/HubForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pages/AddHub.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -861,20 +886,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/forms/HubForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/forms/SearchHubForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="56" lean-forward="true" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
