@@ -34,10 +34,10 @@ class SearchHubForm extends React.Component {
                 const options = [];
                 const hubsHash = {};
                 hubs.forEach(hub => {
-                    hubsHash[hub.hubs] = hub;
+                    hubsHash[hub.id] = hub;
                     options.push({
-                        key: hub.key,
-                        value: hub.key,
+                        key: hub.id,
+                        value: hub.id,
                         text: hub.key
                     });
                 });

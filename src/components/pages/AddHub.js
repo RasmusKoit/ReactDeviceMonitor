@@ -20,6 +20,7 @@ class AddHub extends React.Component {
 
 
                 {this.state.hub && (
+
                     <HubForm submit={this.addHub} hub={this.state.hub} />
                 )}
 

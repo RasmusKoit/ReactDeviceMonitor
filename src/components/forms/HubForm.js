@@ -6,7 +6,8 @@ import InlineError from "../messages/InLineError";
 class HubForm extends React.Component {
     state = {
         data: {
-            key: this.props.hub
+            id: this.props.hub.id,
+            key: this.props.hub.key
         },
         loading: false,
         errors: {}
@@ -15,7 +16,8 @@ class HubForm extends React.Component {
     componentWillReceiveProps(props) {
         this.setState({
             data: {
-                key: props.hub
+                id: props.hub.id,
+                key: props.hub.key
             }
         });
     }
@@ -53,7 +55,7 @@ class HubForm extends React.Component {
         return (
             <Segment>
                 <Form onSubmit={this.onSubmit} loading={loading}>
-                    <Grid columns={1} fluid stackable>
+                    <Grid columns={2} fluid stackable>
                         <Grid.Row>
                             <Grid.Column>
                                 <Form.Field error={!!errors.key}>
@@ -63,7 +65,7 @@ class HubForm extends React.Component {
                                         id="key"
                                         name="key"
                                         placeholder="Hub Key"
-                                        value={data.hub}
+                                        value={data.key}
                                         onChange={this.onChange}
                                     />
                                     {errors.key && <InlineError text={errors.key} />}
@@ -84,6 +86,7 @@ class HubForm extends React.Component {
 HubForm.propTypes = {
     submit: PropTypes.func.isRequired,
     hub: PropTypes.shape({
+        id: PropTypes.string.isRequired,
         key: PropTypes.string.isRequired
     }).isRequired
 };
